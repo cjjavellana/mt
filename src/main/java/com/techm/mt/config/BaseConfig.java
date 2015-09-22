@@ -12,4 +12,9 @@ import javax.servlet.ServletRequestListener;
 @Configuration
 public class BaseConfig {
 
+    @Bean
+    public ServletRequestListener servletRequestListener() {
+        return new MtServletRequestListener();
+    }
+
 }
